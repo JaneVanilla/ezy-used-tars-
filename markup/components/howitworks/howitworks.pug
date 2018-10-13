@@ -1,0 +1,13 @@
+mixin howitworks(data)
+  .howitworks
+    h1 How Dreamshare works?
+    section.howitworks__content
+       mixin item(bgIndex,stepIndex, titleIndex, textIndex)
+         div(class= "howitworks__item " + data.item[bgIndex])
+           section.howitworks__block
+              span #{data.step[stepIndex]}
+              h2 #{data.title[titleIndex]}
+              p #{data.text[textIndex]}
+       +item(0,0,0,0)
+       +item(1,1,1,1)
+       +item(2,2,2,2)

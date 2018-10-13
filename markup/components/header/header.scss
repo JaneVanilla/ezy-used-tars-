@@ -1,0 +1,111 @@
+%fontparam {
+  font-size: 14px;
+  line-height: 19px;
+}
+.page-header {
+  padding-top: 20px;
+  padding-bottom: 153px;
+  //border: 1px solid green;
+  color: #fff;
+  background: url("../img/content/Background.jpg");
+  -webkit-background-size: contain;
+  background-size: cover;
+  background-position: top center;
+  @extend %fontparam;
+}
+.page-header__top {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-weight: lighter;
+}
+.page-header__top-logo {
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: 23.5px;
+}
+.page-header__top-user {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 97px;
+}
+.page-header__top-login,
+.page-header__top-signin {
+  cursor: pointer;
+  @extend %fontparam;
+}
+.page-header__top-signin {
+  border: 2px solid #fff;
+  border-radius: 40px;
+  background: none;
+}
+.page-header__top-banner {
+  text-align: center;
+  //width: 282px;
+}
+.page-header__top-banner h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.page-header__top-banner b {
+  width: 18px;
+  line-height: 24.5px;
+  font-weight: lighter;
+}
+.page-header__top-findbtn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 14px;
+  padding: 10px 51px;
+  background: #FF4E50;
+  border-radius: 40px;
+  @extend %fontparam;
+}
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 40px;
+    padding-bottom: 224px;
+  }
+  .page-header__top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 153.5px;
+
+  }
+  .page-header__top-user,
+  .page-header__top-logo {
+    margin: 0;
+  }
+  .page-header__top-banner {
+    width: auto;
+  }
+  .page-header__top-banner h1 {
+    margin-bottom: 21.5px;
+  }
+  .page-header__top-findbtn {
+    margin-top: 33px;
+  }
+  .page-header__top-banner {
+    //width: 454px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .page-header {
+    padding: 0;
+    padding-top: 46px;
+    padding-bottom: 224px;
+  }
+  .page-header__top {
+    //width: 676px;
+    padding: 0;
+    margin-bottom: 150.5px;
+  }
+}
+

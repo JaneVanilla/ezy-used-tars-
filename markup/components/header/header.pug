@@ -1,0 +1,16 @@
+mixin header(data)
+  .page-header
+     .page__wrapper
+         .page-header__top
+             a.page-header__top-logo #{data.logo}
+             .page-header__top-user
+                 button.page-header__top-login Log in
+                 button.page-header__top-signin Sign up
+         .page-header__top-banner
+             h1 Share your <br/>
+                 | holiday dream
+             b #{data.undertitle}
+             button.page-header__top-findbtn #{data.btn}
+
+
+

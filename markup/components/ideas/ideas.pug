@@ -1,0 +1,14 @@
+mixin ideas(data)
+  .ideas
+      h3 #{data.title}
+      .ideas__container
+          mixin items(classIndex, textIndex)
+             section(class="ideas__banners " + data.block[classIndex])
+                p #{data.text[textIndex]}
+          +items(0,0)
+          +items(1,1)
+          +items(2,2)
+          +items(3,3)
+          +items(4,4)
+          +items(5,5)
+          +items(6,6)

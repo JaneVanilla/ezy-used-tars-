@@ -1,0 +1,39 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+.page__wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+    width: 300px;
+    padding: 0 10px;
+}
+@media screen and (min-width: 768px) {
+    .page__wrapper {
+        width: 748px;
+    }
+}
+@media screen and (min-width: 1140px) {
+    .page__wrapper {
+        width: 940px;
+        padding: 0;
+        //padding: 0 100px;
+    }
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+h1, h2, h3 {
+    margin: 0;
+}

@@ -1,0 +1,88 @@
+.howitworks {
+  padding-top: 37px;
+}
+.howitworks h1 {
+  @include header;
+  margin-bottom: 15px;
+}
+.howitworks__item {
+  position: relative;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 240px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: cover;
+}
+.howitworks__item-1 {
+  background: url(../img/content/step1image.jpg);
+}
+.howitworks__item-2 {
+  background: url(../img/content/step2image.jpg);
+}
+.howitworks__item-3 {
+  background: url(../img/content/step3img.jpg);
+  margin-bottom: 0;
+}
+.howitworks__block{
+  position: absolute;
+  width: 196px;
+  left: 30px;
+  bottom: 16px;
+}
+.howitworks__item span {
+  padding: 4px 12px 2px 14px;
+  color: #fff;
+  background: #FF4E50;
+  border-radius: 40px;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+.howitworks__item h2 {
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+.howitworks__item p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #E3E3E3;
+  font-weight: lighter;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .howitworks {
+    padding-top: 95px;
+  }
+  .howitworks__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .howitworks__item {
+    width: 236px;
+    height: 400px;
+    margin-bottom: 0;
+    background-size: cover;
+  }
+  .howitworks__block {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .howitworks__item {
+    width: 300px;
+    height: 400px;
+  }
+  .howitworks__block {
+    left: 25px;
+    bottom: 21px;
+    width: 250px;
+  }
+}

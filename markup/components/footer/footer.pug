@@ -1,0 +1,20 @@
+mixin footer(data)
+    footer.footer
+      h3 DREAMSHARE
+      ul.footer__company-list
+          mixin company(nameIndex)
+             li
+                a #{data.name[nameIndex]}
+          +company(0)
+          +company(1)
+          +company(2)
+          +company(3)
+          +company(4)
+          +company(5)
+          +company(6)
+      ul.footer__partner-list
+          +company(7)
+      .footer__logo
+          span Designed by
+          a
+            img(src="static/img/content/areto.svg" width="110px" height="24px")

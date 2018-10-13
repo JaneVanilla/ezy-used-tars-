@@ -1,0 +1,134 @@
+.ideas {
+  padding-top: 35px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ideas h3 {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  @include header;
+  line-height: 30px;
+}
+.ideas__banners {
+  width: 300px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+.ideas__banners:last-child {
+  margin-bottom: 0;
+}
+.ideas__banners p {
+  margin: 0;
+  padding-top: 47px;
+  text-align: center;
+}
+.ideas__banners--1 {
+  background: url("../img/content/Bitmap.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ideas__banners--2 {
+  padding-top: 33px;
+  background: url("../img/content/health.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ideas__banners--3 {
+  padding-top: 33px;
+  background: url("../img/content/extreme.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ideas__banners--4 {
+  background: url("../img/content/game.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ideas__banners--5 {
+  background: url("../img/content/culture.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ideas__banners--6 {
+  background: url("../img/content/beauty.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ideas__banners--7 {
+  background: url("../img/content/selfie.jpg"), no-repeat,;
+  background-size: cover;
+  background-position: top;
+}
+.ideas__banners p {
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .ideas__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ideas__banners {
+    height: 310px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ideas__banners p {
+    padding-top: 142px;
+  }
+  .ideas__banners--1 {
+    width: 236px;
+    background: url("../img/content/bitmap.jpg"), no-repeat, right top;
+  }
+  .ideas__banners--2 {
+    width: 236px;
+    padding-top: 0;
+    background: url("../img/content/health.jpg"), no-repeat, right top;
+    background-size: cover;
+  }
+  .ideas__banners--3 {
+    width: 236px;
+    padding-top: 0;
+    background: url("../img/content/extreme.jpg"), no-repeat, center;
+    background-size: cover;
+  }
+  .ideas__banners--4 {
+    width: 236px;
+    background: url("../img/content/game.jpg"), no-repeat, right top;
+    background-size: cover;
+  }
+  .ideas__banners--5 {
+    width: 492px;
+    background: url("../img/content/culture.jpg"), no-repeat;
+    background-size: cover;
+  }
+  .ideas__banners--6 {
+    width: 492px;
+    background: url("../img/content/beauty.jpg"), no-repeat, right top;
+    background-size: cover;
+  }
+  .ideas__banners--7 {
+    width: 236px;
+    background: url("../img/content/selfie.jpg"), no-repeat, right top;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .ideas__banners--1,
+  .ideas__banners--2,
+  .ideas__banners--3,
+  .ideas__banners--4,
+  .ideas__banners--7 {
+    width: 300px;
+  }
+  .ideas__banners--5,
+  .ideas__banners--6 {
+    width: 620px;
+  }
+
+}

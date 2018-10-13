@@ -1,0 +1,126 @@
+.meet-partner {
+  padding-top: 34px;
+}
+.meet-partner h1 {
+  @include header;
+  width: 236px;
+  margin: 0 auto;
+  line-height: 31px;
+  margin-bottom: 8px;
+}
+.meet-partner__item  {
+  text-align: center;
+  color: #444;
+  width: 226px;
+  padding: 0 5px;
+  height: 234px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.meet-partner__item:last-child {
+  margin-bottom: 18px;
+}
+.meet-partner__item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: lighter;
+}
+.meet-partner__item p {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+  font-weight: lighter;
+}
+.meet-partner__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 11px 73px 11px 74px;
+  text-align: center;
+  color:  #FF4E50;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 40px;
+  border: 2px solid #FF4E50;
+}
+.meet-partner__btn:hover {
+  color: #fff;
+  background: #FF4E50;
+  border: 2px solid #fff;
+}
+.meet-partner__avatar-block {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+.meet-partner__avatar-block::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.meet-partner__ava--1::after {
+  background: url("../img/content/music2.png") no-repeat center, #FF4E50 ;
+}
+.meet-partner__ava--2::after {
+  background: url("../img/content/camera.png") no-repeat center, #FFA710 ;
+}
+.meet-partner__ava--3::after {
+  background: url("../img/content/brush.png") no-repeat center, #19D4CA ;
+}
+.meet-partner__ava--4::after {
+  background: url("../img/content/airplane.png") no-repeat center, #667DF3 ;
+}
+@media screen and (min-width: 768px) {
+  .meet-partner {
+    width: 492px;
+    margin: 0 auto;
+   padding-top: 95px;
+  }
+  .meet-pattner__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .meet-partner__item {
+    width: 236px;
+    height: 205px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  .meet-partner h1 {
+    width: 492px;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
+  .meet-partner__btn {
+    width: 180px;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .meet-partner {
+    width: auto;
+  }
+  .meet-pattner__content {
+    flex-wrap: nowrap;
+    margin-bottom: 35px;
+  }
+  .meet-partner__item {
+    width: 221px;
+    margin-bottom: 0;
+  }
+  //.meet-pattner__content {
+  //  margin-bottom: 0;
+  //}
+}
